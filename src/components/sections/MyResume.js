@@ -3,28 +3,28 @@ import Link from "next/link";
 const MyResume = () => {
   const experienceData = [
     {
-      title: "Senior Developer",
-      company: "Tech Company",
+      title: "Assistant",
+      company: "ITERA",
       period: "2022 - Present",
       description:
-        "Leading development of web applications and mentoring junior developers with modern technologies.",
+        "Desc",
     },
     {
-      title: "Full Stack Developer",
-      company: "Startup Inc",
+      title: "Assistant",
+      company: "ITERA",
       period: "2020 - 2022",
       description:
-        "Built scalable web applications using React, Node.js, and cloud technologies.",
+        "Desc",
     },
   ];
 
   const educationData = [
     {
-      title: "Bachelor of Computer Science",
-      institution: "University Name",
-      period: "2016 - 2020",
+      title: "Bachelor of Data Science",
+      institution: "Institute of Technology Sumatera",
+      period: "2023 - 2027",
       description:
-        "Graduated with honors, specialized in software engineering and data structures.",
+        "Desc",
     },
   ];
 

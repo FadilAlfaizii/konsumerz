@@ -7,25 +7,31 @@ const FeaturedProjects = () => {
       id: 1,
       title: "Project One",
       description:
-        "A brief description of your amazing project. This could be a web application, mobile app, or any other digital solution that showcases your expertise.",
+        "Desc",
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       image: "/assets/imgs/page/portfolio/project-placeholder.jpg",
+      liveUrl: "https://your-project-one-live-url.com",
+      githubUrl: "https://github.com/yourusername/project-one",
     },
     {
       id: 2,
       title: "Project Two",
       description:
-        "Another fantastic project showcasing your skills and creativity. Describe the problem it solves and the impact it has made in your portfolio.",
+        "Desc",
       technologies: ["Next.js", "Node.js", "MongoDB"],
       image: "/assets/imgs/page/portfolio/project-placeholder.jpg",
+      liveUrl: "https://your-project-two-live-url.com",
+      githubUrl: "https://github.com/yourusername/project-two",
     },
     {
       id: 3,
       title: "Project Three",
       description:
-        "Your third remarkable project demonstrating your versatility and technical expertise in different domains and technologies.",
+        "Desc",
       technologies: ["Vue.js", "Express", "PostgreSQL"],
       image: "/assets/imgs/page/portfolio/project-placeholder.jpg",
+      liveUrl: "https://your-project-three-live-url.com",
+      githubUrl: "https://github.com/yourusername/project-three",
     },
   ];
 
@@ -49,19 +55,38 @@ const FeaturedProjects = () => {
             data-wow-delay={`${i * 0.1}s`}
             key={project.id}
           >
-            <div className="card-project hover-up">
-              <div className="card-image mb-20">
+            <div className="project-card">
+              <div className="project-image-container">
                 <div className="project-image-placeholder">
                   <span className="placeholder-text">
                     Project Image Placeholder
                   </span>
                 </div>
+                <div className="project-overlay">
+                  <div className="project-actions">
+                    <Link
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="action-button live-button"
+                    >
+                      <i className="fi-rr-link" />
+                      <span>Live</span>
+                    </Link>
+                    <Link
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="action-button github-button"
+                    >
+                      <i className="fi-brands-github" />
+                    </Link>
+                  </div>
+                </div>
               </div>
-              <div className="card-info">
-                <h4 className="color-white mb-15">{project.title}</h4>
-                <p className="color-gray-500 mb-20 text-sm line-height-26">
-                  {project.description}
-                </p>
+              <div className="project-info">
+                <h4 className="project-title">{project.title}</h4>
+                <p className="project-description">{project.description}</p>
                 <div className="project-technologies">
                   {project.technologies.map((tech, index) => (
                     <span key={index} className="tech-tag">
