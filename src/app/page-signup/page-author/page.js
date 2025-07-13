@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Layout from "@/components/layout/Layout"
 import Pagination from "@/components/elements/Pagination"
-import Hero6 from "@/components/sections/Hero6"
+import Hero6 from "@/components/sections/Hero3"
 
 import data from "@/utils/blogData"
 
