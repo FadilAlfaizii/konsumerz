@@ -19,7 +19,7 @@ export default function Home3() {
                       <div className="info-404 text-start mt-60">
                         <h2 className="color-linear mb-20">Page not found</h2>
                         <p className="text-xl color-gray-500">The page you are looking for has slipped in to an unknown realm. Click the button below to go back to the homepage.</p>
-                        <div className="mt-25"><Link className="btn btn-linear hover-up" href="/">Homepage</Link></div>
+                        <div className="mt-25"><Link className="btn btn-linear hover-up" href="/homepage">Homepage</Link></div>
                       </div>
                     </div>
                   </div>

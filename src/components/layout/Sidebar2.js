@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import data from "@/utils/blogData2"
+import data from "@/utils/blogData"
 import comments from "@/utils/commentsData"
 import gallery from "@/utils/galleryData"
 

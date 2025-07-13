@@ -1,4 +1,5 @@
 'use client'
+import '@/app/globals.css'
 import React, { useState } from 'react'
 import BackToTop from '@/components/elements/BackToTop'
 import Footer from '@/components/layout/Footer'

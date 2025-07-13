@@ -1,92 +1,179 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
-    return (
-        <>
-            <footer className="footer">
-                <div className="container">
-                    <div className="footer-1 bg-gray-850 border-gray-800">
-                        <div className="row">
-                            <div className="col-lg-4 mb-30">
-                                <Link className="wow animate__animated animate__fadeInUp" href="/">
-                                    <Image width={116} height={36} src="/assets/imgs/template/logo.svg" alt="Genz" />
-                                </Link>
-                                <p className="mb-20 mt-20 text-sm color-gray-500 wow animate__animated animate__fadeInUp">When an
-                                    unknown prnoto sans took a galley and scrambled it to make specimen book not only five When
-                                    an unknown prnoto sans took a galley and scrambled it to five centurie.</p>
-                                <h6 className="color-white mb-5 wow animate__animated animate__fadeInUp">Address</h6>
-                                <p className="text-sm color-gray-500 wow animate__animated animate__fadeInUp">123 Main Street<br />New
-                                    York, NY 10001</p>
-                            </div>
-                            <div className="col-lg-4 mb-30">
-                                <h6 className="text-lg mb-30 color-white wow animate__animated animate__fadeInUp">Categories</h6>
-                                <div className="row">
-                                    <div className="col-6">
-                                        <ul className="menu-footer">
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Action</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Business</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Adventure</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Canada</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">America</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Curiosity</Link></li>
-                                        </ul>
-                                    </div>
-                                    <div className="col-6">
-                                        <ul className="menu-footer">
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Animal</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Dental</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Biology</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Design</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Breakfast</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Dessert</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 mb-30">
-                                <h4 className="text-lg mb-30 color-white wow animate__animated animate__fadeInUp">Newsletter</h4>
-                                <p className="text-base color-gray-500 wow animate__animated animate__fadeInUp">Sign up to be first
-                                    to receive the latest stories inspiring us, case studies, and industry news.</p>
-                                <div className="form-newsletters mt-15 wow animate__animated animate__fadeInUp">
-                                    <form action="#">
-                                        <div className="form-group">
-                                            <input className="input-name border-gray-500" type="text" placeholder="Your name" />
-                                        </div>
-                                        <div className="form-group">
-                                            <input className="input-email border-gray-500" type="email" placeholder="Emaill address" />
-                                        </div>
-                                        <div className="form-group mt-20">
-                                            <button className="btn btn-linear hover-up">
-                                                Subscribe
-                                                <i className="fi-rr-arrow-small-right" />
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="footer-bottom border-gray-800">
-                            <div className="row">
-                                <div className="col-lg-5 text-center text-lg-start">
-                                    <p className="text-base color-white wow animate__animated animate__fadeIn">© 2025 Created by<Link className="copyright" href="http://alithemes.com" target="_blank"> AliThemes.com</Link></p>
-                                </div>
-                                <div className="col-lg-7 text-center text-lg-end">
-                                    <div className="box-socials">
-                                        <div className="d-inline-block mr-30 wow animate__animated animate__fadeIn" data-wow-delay=".0s"><Link className="icon-socials icon-twitter color-gray-500" href="https://twitter.com">Twitter</Link></div>
-                                        <div className="d-inline-block mr-30 wow animate__animated animate__fadeIn" data-wow-delay=".2s"><Link className="icon-socials icon-linked color-gray-500" href="https://www.linkedin.com">LinkedIn</Link></div>
-                                        <div className="d-inline-block wow animate__animated animate__fadeIn" data-wow-delay=".4s">
-                                            <Link className="icon-socials icon-insta color-gray-500" href="https://www.instagram.com">Instagram</Link></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+  return (
+    <>
+      <footer className="footer">
+        <div className="container">
+          <div className="get-in-touch-section py-80">
+            {/* Header */}
+            <div className="text-center mb-70">
+              <h2 className="mb-10 wow animate__animated animate__fadeInUp">
+                <span className="color-white">Get In </span>
+                <span className="color-linear">Touch</span>
+              </h2>
+              <p className="text-lg color-gray-500 wow animate__animated animate__fadeInUp">
+                Let's work together to bring your ideas to life. I'm always
+                excited about new opportunities and challenges.
+              </p>
+            </div>
 
-        </>
-    );
+            <div className="row">
+              {/* Contact Info */}
+              <div className="col-lg-5 mb-50">
+                <div className="contact-info">
+                  <h3 className="color-white mb-30 wow animate__animated animate__fadeInUp">
+                    Let's start a conversation
+                  </h3>
+                  <p className="color-gray-500 mb-40 wow animate__animated animate__fadeInUp">
+                    I'm always interested in new opportunities and exciting
+                    projects. Whether you have a question or just want to say
+                    hi, feel free to reach out!
+                  </p>
+
+                  <div className="contact-item mb-30 wow animate__animated animate__fadeInUp">
+                    <div className="contact-icon">
+                      <i className="fi-rr-envelope" />
+                    </div>
+                    <div className="contact-content">
+                      <h6 className="color-white mb-5">Email</h6>
+                      <p className="color-gray-500">alfaizifadil100@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div className="contact-item mb-30 wow animate__animated animate__fadeInUp">
+                    <div className="contact-icon">
+                      <i className="fi-rr-phone-call" />
+                    </div>
+                    <div className="contact-content">
+                      <h6 className="color-white mb-5">Phone</h6>
+                      <p className="color-gray-500">+62 812-7293-5644</p>
+                    </div>
+                  </div>
+
+                  <div className="contact-item mb-30 wow animate__animated animate__fadeInUp">
+                    <div className="contact-icon">
+                      <i className="fi-rr-marker" />
+                    </div>
+                    <div className="contact-content">
+                      <h6 className="color-white mb-5">Location</h6>
+                      <p className="color-gray-500">Bandar Lampung, Indonesia</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Form */}
+              <div className="col-lg-7">
+                <div className="contact-form">
+                  <form className="wow animate__animated animate__fadeInUp">
+                    <div className="row">
+                      <div className="col-md-6 mb-20">
+                        <label className="form-label color-gray-500">
+                          Name
+                        </label>
+                        <input
+                          type="text"
+                          className="form-control contact-input"
+                          placeholder="Your name"
+                        />
+                      </div>
+                      <div className="col-md-6 mb-20">
+                        <label className="form-label color-gray-500">
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          className="form-control contact-input"
+                          placeholder="your.email@example.com"
+                        />
+                      </div>
+                    </div>
+                    <div className="mb-20">
+                      <label className="form-label color-gray-500">
+                        Subject
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control contact-input"
+                        placeholder="What's this about?"
+                      />
+                    </div>
+                    <div className="mb-30">
+                      <label className="form-label color-gray-500">
+                        Message
+                      </label>
+                      <textarea
+                        className="form-control contact-textarea"
+                        rows="5"
+                        placeholder="Tell me about your project or just say hello!"
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      className="btn btn-send-message hover-up"
+                    >
+                      <i className="fi-rr-paper-plane mr-10" />
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            {/* Footer Bottom */}
+            <div className="footer-bottom border-gray-800 mt-70 pt-30">
+              <div className="row">
+                <div className="col-lg-6 text-center text-lg-start">
+                  <p className="text-base color-gray-500 wow animate__animated animate__fadeIn">
+                    © 2025 All rights reserved.
+                  </p>
+                </div>
+                <div className="col-lg-6 text-center text-lg-end">
+                  <div className="box-socials">
+                    <div
+                      className="d-inline-block mr-30 wow animate__animated animate__fadeIn"
+                      data-wow-delay=".0s"
+                    >
+                      <Link
+                        className="icon-socials icon-twitter color-gray-500"
+                        href="https://twitter.com"
+                      >
+                        Twitter
+                      </Link>
+                    </div>
+                    <div
+                      className="d-inline-block mr-30 wow animate__animated animate__fadeIn"
+                      data-wow-delay=".2s"
+                    >
+                      <Link
+                        className="icon-socials icon-linked color-gray-500"
+                        href="https://www.linkedin.com"
+                      >
+                        LinkedIn
+                      </Link>
+                    </div>
+                    <div
+                      className="d-inline-block wow animate__animated animate__fadeIn"
+                      data-wow-delay=".4s"
+                    >
+                      <Link
+                        className="icon-socials icon-insta color-gray-500"
+                        href="https://www.instagram.com"
+                      >
+                        Instagram
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
 };
 
 export default Footer;

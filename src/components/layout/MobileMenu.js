@@ -41,19 +41,10 @@ const MobileMenu = ({ openClass }) => {
                             <div className="mobile-menu-wrap mobile-header-border">
                                 <nav className="mt-15">
                                     <ul className="mobile-menu font-heading">
-                                        <li className={isActive.key == 1 ? "has-children active" : "has-children"} onClick={() => handleToggle(1)}>
-                                            <span className="menu-expand"><i className="fi-rr-caret-down"></i></span>
-                                            <Link href="/">Home</Link>
-                                            <ul className={isActive.key == 1 ? "sub-menu d-block" : "sub-menu d-none"}>
-                                                <li><Link href="/">Homepage - 1</Link></li>
-                                                <li><Link href="/index-2">Homepage - 2</Link></li>
-                                                <li><Link href="/index-3">Homepage - 3</Link></li>
-                                                <li><Link href="/index-4">Homepage - 4</Link></li>
-                                            </ul>
-                                        </li>
+                                        <li><Link href="/homepage">Home</Link></li>
                                         <li className={isActive.key == 2 ? "has-children active" : "has-children"} onClick={() => handleToggle(2)}>
                                             <span className="menu-expand"><i className="fi-rr-caret-down"></i></span>
-                                            <Link href="/#">Category</Link>
+                                            <Link href="/#">Projects</Link>
                                             <ul className={isActive.key == 2 ? "sub-menu d-block" : "sub-menu d-none"}>
                                                 <li><Link href="/blog-archive">Blog Category 1</Link></li>
                                                 <li><Link href="/blog-archive-2">Blog Category 2</Link></li>

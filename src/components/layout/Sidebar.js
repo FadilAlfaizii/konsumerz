@@ -1,7 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import data from "@/utils/blogData2"
-import comments from "@/utils/commentsData"
+import data from "@/utils/blogData"
 import gallery from "@/utils/galleryData"
 
 const Sidebar = ({ openClass }) => {

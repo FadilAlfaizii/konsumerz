@@ -3,7 +3,7 @@ import PortfolioFilter from "@/components/elements/PortfolioFilter"
 import Layout from "@/components/layout/Layout"
 import Testimonial from "@/components/slider/Testimonial"
 import PricingTable from "@/components/sections/PricingTable"
-import Hero5 from "@/components/sections/Hero5"
+import Hero3 from "@/components/sections/Hero3"
 import MyServices from "@/components/sections/MyServices"
 import PartnersLogs from "@/components/sections/PartnersLogs"
 
@@ -16,7 +16,7 @@ export default function PageAbout() {
                         <div className="row">
                             <div className="col-xl-1" />
                             <div className="col-xl-10 col-lg-12">
-                                <Hero5 />
+                                <Hero3 />
                                 <MyServices />
                                 <div className="text-center mt-70 mb-50">
                                     <h2 className="color-linear d-inline-block mb-20 wow animate__animated animate__fadeInUp">My Latest Projects</h2>

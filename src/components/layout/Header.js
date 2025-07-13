@@ -43,54 +43,17 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                     <div className="main-header">
                         <div className="header-logo">
                             <Link className="d-flex" href="/">
-                                <Image width={116} height={36} className="logo-night" alt="GenZ" src="/assets/imgs/template/logo.svg" />
-                                <Image width={116} height={36} className="d-none logo-day" alt="GenZ" src="/assets/imgs/template/logo-day.svg" />
+                                <Image width={116} height={36} className="logo-night" alt="Fadil" src="@public/assets/imgs/template/logo.svg" />
+                                <Image width={116} height={36} className="logo-day" alt="Fadil" src="@public/assets/imgs/template/logo-day.svg" />
                             </Link>
                         </div>
                         <div className="header-nav">
                             <nav className="nav-main-menu d-none d-xl-block">
                                 <ul className="main-menu">
-                                    <li className="has-children"><Link className="active" href="/">Home</Link>
-                                        <ul className="sub-menu two-col">
-                                            <li><Link className="color-gray-500" href="/">Homepage - 1</Link></li>
-                                            <li><Link className="color-gray-500" href="/index-2">Homepage - 2</Link></li>
-                                            <li><Link className="color-gray-500" href="/index-3">Homepage - 3</Link></li>
-                                            <li><Link className="color-gray-500" href="/index-4">Homepage - 4</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-children"><Link className="color-gray-500" href="/about">About Me</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link className="color-gray-500" href="/portfolio">My Portfolio</Link></li>
-                                            <li><Link className="color-gray-500" href="/portfolio-details">Portfolio Details</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-children"><Link className="color-gray-500" href="#">Category</Link>
-                                        <ul className="sub-menu two-col">
-                                            <li><Link className="color-gray-500" href="/blog-archive">Blog Category 1</Link></li>
-                                            <li><Link className="color-gray-500" href="/blog-archive-2">Blog Category 2</Link></li>
-                                            <li><Link className="color-gray-500" href="/blog-archive-3">Blog Category 3</Link></li>
-                                            <li><Link className="color-gray-500" href="/blog-archive-4">Blog Category 4</Link></li>
-                                            <li><Link className="color-gray-500" href="/blog-archive-5">Blog Category 5</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-children"><Link className="color-gray-500" href="#">Single Post</Link>
-                                        <ul className="sub-menu two-col">
-                                            <li><Link className="color-gray-500" href="/single-sidebar">Blog Single 1</Link></li>
-                                            <li><Link className="color-gray-500" href="/single-no-sidebar">Blog Single 2</Link></li>
-                                            <li><Link className="color-gray-500" href="/single-center">Blog Single 3</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-children"><Link className="color-gray-500" href="#">Pages</Link>
-                                        <ul className="sub-menu two-col">
-                                            <li><Link className="color-gray-500" href="/about">About</Link></li>
-                                            <li><Link className="color-gray-500" href="/page-author">Author posts</Link></li>
-                                            <li><Link className="color-gray-500" href="/contact">Contact</Link></li>
-                                            <li><Link className="color-gray-500" href="/page-search">Search results</Link></li>
-                                            <li><Link className="color-gray-500" href="/page-login">Login</Link></li>
-                                            <li><Link className="color-gray-500" href="/page-signup">Signup</Link></li>
-                                            <li><Link className="color-gray-500" href="/page-404">Page 404</Link></li>
-                                        </ul>
-                                    </li>
+                                    <li><Link className="active" href="/homepage">Home</Link></li>
+                                    <li><Link className="color-gray-500" href="/about">About Me</Link></li>
+                                    <li><Link className="color-gray-500" href="#">Projects</Link></li>
+                                    <li><Link className="color-gray-500" href="#">Resume</Link></li>
                                     <li><Link className="color-gray-500" href="/contact">Contact</Link></li>
                                 </ul>
                             </nav>
